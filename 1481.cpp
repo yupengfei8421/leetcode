@@ -48,6 +48,9 @@ for(auto i: arr){
 cout<<endl<<"\n长度："<<arr.size()<<"\n去除："<<k<<"个"<<endl;
 int answer = findLeastNumOfUniqueInts(arr,k);
 cout<<"还剩"<<answer<<"个不同数字";
+cout<<"pause"<<endl;
+int i;
+cin>>i;
 return 0;
 // PS C:\Users\admin\Desktop\leetcode> .\1481.exe
 // 1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3, 4, 1, 2, 3, 
