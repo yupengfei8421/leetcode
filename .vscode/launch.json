@@ -20,7 +20,7 @@
       "stopAtEntry": false,
       "cwd": "c:\\Users\\admin\\Desktop\\leetcode",
       "environment": [],
-      "program": "${workspaceFolder}/1481gbd.exe",
+      "program": "${workspaceFolder}/1481gdb.exe",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",

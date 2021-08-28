@@ -1,5 +1,6 @@
 //1481
 // c++ .\1481.cpp -o .\1481.exe -std=c++17 -fexec-charset=GBK
+// c++ .\1481.cpp -g -o .\1481gdb.exe -std=c++17 -fexec-charset=GBK
 #include<vector>
 #include<unordered_map>
 #include<iostream>
