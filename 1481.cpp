@@ -48,7 +48,7 @@ for(auto i: arr){
 cout<<endl<<"\n长度："<<arr.size()<<"\n去除："<<k<<"个"<<endl;
 int answer = findLeastNumOfUniqueInts(arr,k);
 cout<<"还剩"<<answer<<"个不同数字";
-cout<<"pause"<<endl;
+cout<<"\npause"<<endl;
 int i;
 cin>>i;
 return 0;
@@ -88,4 +88,5 @@ return 0;
 // 1, 3
 // 3, 3
 // 还剩7个不同数字
+//pause
 }
