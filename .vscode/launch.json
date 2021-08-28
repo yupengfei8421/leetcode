@@ -2,30 +2,6 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "(gdb) Windows 上的 Bash 启动",
-      "type": "cppdbg",
-      "request": "launch",
-      "program":"${workspaceFolder}/1481.exe",
-      "args": [],
-      "stopAtEntry": false,
-      "cwd": "${fileDirname}",
-      "environment": [],
-      "externalConsole": false,
-      "pipeTransport": {
-        "debuggerPath": "/usr/bin/gdb",
-        "pipeProgram": "${env:windir}\\system32\\bash.exe",
-        "pipeArgs": ["-c"],
-        "pipeCwd": ""
-      },
-      "setupCommands": [
-          {
-              "description": "为 gdb 启用整齐打印",
-              "text": "-enable-pretty-printing",
-              "ignoreFailures": true
-          }
-      ]
-    },
-    {
       "name": "(Windows) 启动",
       "type": "cppvsdbg",
       "request": "launch",
@@ -44,7 +20,7 @@
       "stopAtEntry": false,
       "cwd": "c:\\Users\\admin\\Desktop\\leetcode",
       "environment": [],
-      "program": "c:\\Users\\admin\\Desktop\\leetcode\\build\\Debug\\outDebug",
+      "program": "${workspaceFolder}/1481gbd.exe",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "C:\\Program Files\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\mingw64\\bin\\gdb.exe",
