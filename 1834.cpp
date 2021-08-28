@@ -48,3 +48,8 @@ public:
     }
 };
  
+ int main(){
+     Solution a;
+     
+     return 0;
+ }
