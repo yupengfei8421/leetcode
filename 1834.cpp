@@ -29,7 +29,7 @@ public:
         for(int i=0; i<n; ++i){
             //如果没有可以执行的任务，直接快进
             if (q.empty()){
-                timestamp = max(timestamp,(LL)tasks[indices[ptr]][0])
+                timestamp = max(timestamp,(LL)tasks[indices[ptr]][0]);
             }
             //将所有小于等于时间戳的任务放入优先队列中
             while((ptr<n)&& tasks[indices[ptr]][0]<timestamp){
