@@ -49,7 +49,31 @@ public:
 };
  
  int main(){
-     Solution a;
-     
+     vector<vector<int>> tasks = {{1,2},{2,4},{3,2},{4,1}};
+     Solution *a = new Solution();
+     vector<int> answer=a->getOrder(tasks);
+     cout<<endl<<"tasks"<<endl;
+     for(auto iter:tasks){
+            for(auto iter_inner:iter){
+                cout<<iter_inner<<", ";
+            }
+         cout<<"\n";
+     }
+     cout<<endl<<"answer"<<endl;
+     for(auto iter:answer){
+         cout<<iter<<", ";
+     }
+
+     delete(a);
+     int b =0;
+     cin>>b;
      return 0;
  }
+//  tasks
+// 1, 2, 
+// 2, 4, 
+// 3, 2, 
+// 4, 1, 
+
+// answer
+// 0, 2, 3, 1, 
