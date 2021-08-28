@@ -4,10 +4,7 @@
     "-Wextra",
     "-Wpedantic"
   ],
-  "C_Cpp_Runner.compilerArgs": [
-    "-std=c++17",
-    " -fexec-charset=GBK"
-  ],
+  "C_Cpp_Runner.compilerArgs": [],
   "C_Cpp_Runner.includePaths": [],
   "C_Cpp_Runner.linkerArgs": [],
   "C_Cpp_Runner.cStandard": "",
