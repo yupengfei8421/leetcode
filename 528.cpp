@@ -35,6 +35,40 @@ public:
  * Solution* obj = new Solution(w);
  * int param_1 = obj->pickIndex();
  */
+// 二分搜索优化
+using namespace std;
+
+class Solution {
+public:
+    int range = 0;
+    vector<int> weights;
+
+    Solution(vector<int>& w) {
+        for (auto w_ : w) {
+            range += w_;
+            weights.push_back(range);
+        }
+    }
+    
+    int pickIndex() {
+        int rnd = rand() % range;
+
+        int left = 0;
+        int right = weights.size() - 1;
+
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (rnd < weights[mid]) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+
+        return left;
+    }
+};
+
 
 int main(){
     std::vector<int> test;
@@ -44,7 +78,15 @@ int main(){
     while(std::cin>>i){
         test.push_back(i);
     }
-    Solution1* obj = new Solution1(test);
-    int param_1 = obj->pickIndex();
-    std::cout<<"answer="<<param_1 <<std::endl;
+    {
+        Solution1* obj = new Solution1(test);
+        int param_1 = obj->pickIndex();
+        std::cout<<"answer="<<param_1 <<std::endl;
+    }
+    {
+        Solution *obj = new Solution(test);
+        int param_1 = obj->pickIndex();
+        std::cout<<"answer="<<param_1 <<std::endl;
+    }
+    return 0;
 }
